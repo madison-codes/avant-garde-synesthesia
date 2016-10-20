@@ -1,0 +1,50 @@
+@import 'variables';
+
+.sign-in {
+  @include sign-in();
+  position: fixed;
+  bottom: 0;
+}
+
+.user-info {
+  @include sign-in();
+  bottom: 15vh;
+}
+
+.sign-in-button {
+  @include button($color-highlight-two);
+  margin-left: 20px;
+  margin-top: 2vh;
+}
+
+.user-info-text-block {
+  margin-left: 3vw;
+  margin-top: 3vh;
+}
+
+.user-info p {
+  display: inline-block;
+}
+
+.signout-button {
+  @include button($color-highlight-three);
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 400px) {
+  .sign-in {
+    bottom: 0;
+    height:10vh
+  }
+
+  .user-info {
+    bottom: 8vh;
+    height: 10vh;
+  }
+
+  .signout-button {
+    margin-top: -15px;
+  }
+}
