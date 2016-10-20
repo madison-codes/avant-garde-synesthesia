@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/madison-kerndt/avant-garde-synesthesia.png?label=ready&title=Ready)](https://waffle.io/madison-kerndt/avant-garde-synesthesia)
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.  
