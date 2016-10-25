@@ -1,0 +1,39 @@
+@import 'variables';
+
+.footer {
+  @include bookends();
+  bottom: 0;
+}
+
+.footer-actions {
+  @include flex();
+  width: 170px;
+  justify-content: space-between;
+}
+
+.footer-message-input {
+  @include input-field();
+}
+
+.character-count {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.footer-submit-button {
+  @include button($color-highlight-two);
+}
+
+.footer-clear-button {
+  @include button ($color-highlight-three);
+}
+
+@media (min-width: 400px) {
+  .footer {
+    height: 10vh;
+  }
+
+  .footer-message-input {
+    width: 50vw;
+  }
+}
