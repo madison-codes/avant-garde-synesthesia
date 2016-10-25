@@ -16,14 +16,15 @@ export default class Application extends React.Component {
         <p>
           Click the buttons to play or pause the audio.
         </p>
-        <Sound
+        <div onHover= { console.log('working'); }</div>
+        {/* <Sound
           number = { 1 }
           value = { 440 }
         />
         <Sound
           number = { 2 }
           value = { 400 }
-        />
+        /> */}
       </section>
     );
   }
