@@ -1,11 +1,9 @@
 @import 'reset';
 @import 'variables';
-@import 'header';
-@import 'sign-in';
-@import 'footer';
-@import 'aside';
-@import 'main';
 
-body {
-  font-family: $font-main;
+.sound-btn {
+  background-color: pink;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
 }

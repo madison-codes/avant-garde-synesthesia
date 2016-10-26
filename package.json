@@ -46,6 +46,7 @@
     "mocha-loader": "^1.0.0",
     "node-libs-browser": "^1.0.0",
     "node-sass": "^3.10.0",
+    "octavian": "^2.2.0",
     "react": "^15.3.1",
     "react-addons-test-utils": "^15.3.1",
     "react-dom": "^15.3.1",
