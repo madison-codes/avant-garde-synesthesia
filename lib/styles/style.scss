@@ -1,6 +1,10 @@
 @import 'reset';
 @import 'variables';
 
+.contain-sound {
+  display: inline-block;
+}
+
 .sound-btn {
   background-color: pink;
   height: 100px;

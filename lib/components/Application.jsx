@@ -1,12 +1,15 @@
 import React from 'react';
 import Sound from './Sound'
 
-
 export default class Application extends React.Component {
   constructor() {
     super();
     this.state = {
     };
+  }
+
+  pauseSound() {
+    gain.gain.value = 0;
   }
 
   render() {
@@ -15,17 +18,21 @@ export default class Application extends React.Component {
         <p>
           Click the buttons to play or pause the audio.
         </p>
-        <Sound index={ 1 }/>
-        <Sound index={ 2 }/>
-        <Sound index={ 3 }/>
-        <Sound index={ 4 }/>
-        <Sound index={ 5 }/>
-        <Sound index={ 6 }/>
-        <Sound index={ 7 }/>
-        <Sound index={ 8 }/>
-        <Sound index={ 9 }/>
-        <Sound index={ 10 }/>
-        <Sound index={ 11 }/>
+        <div className='contain-sound'>
+          <Sound index={ 1 }/>
+          <Sound index={ 2 }/>
+          <Sound index={ 3 }/>
+        </div>
+        <div className='contain-sound'>
+          <Sound index={ 4 }/>
+          <Sound index={ 5 }/>
+          <Sound index={ 6 }/>
+        </div>
+        <div className='contain-sound'>
+          <Sound index={ 7 }/>
+          <Sound index={ 8 }/>
+          <Sound index={ 9 }/>
+        </div>
       </section>
     );
   }
