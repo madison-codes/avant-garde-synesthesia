@@ -1,5 +1,6 @@
 import React from 'react';
 import Sound from './Sound'
+import Tracker from './Tracker'
 
 export default class Application extends React.Component {
   constructor() {
@@ -33,6 +34,7 @@ export default class Application extends React.Component {
           <Sound index={ 8 }/>
           <Sound index={ 9 }/>
         </div>
+        <Tracker />
       </section>
     );
   }
