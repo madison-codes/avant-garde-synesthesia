@@ -1,5 +1,5 @@
 import React from 'react';
-import Sound from './Sound'
+import Sound from './Sound';
 import TrackColor from './TrackColor'
 
 export default class Application extends React.Component {
@@ -19,21 +19,21 @@ export default class Application extends React.Component {
         <p>
           Click the buttons to play or pause the audio.
         </p>
-        <div className='contain-sound'>
-          <Sound index={ 1 }/>
-          <Sound index={ 2 }/>
-          <Sound index={ 3 }/>
+        {/* <div>
+          <Sound index={ 6 } />
+          <Sound index={ 2 } />
+          <Sound index={ 3 } />
         </div>
         <div className='contain-sound'>
-          <Sound index={ 4 }/>
-          <Sound index={ 5 }/>
-          <Sound index={ 6 }/>
+          <Sound index={ 4 } />
+          <Sound index={ 5 } />
+          <Sound index={ 6 } />
         </div>
         <div className='contain-sound'>
-          <Sound index={ 7 }/>
-          <Sound index={ 8 }/>
-          <Sound index={ 9 }/>
-        </div>
+          <Sound index={ 7 } />
+          <Sound index={ 8 } />
+          <Sound index={ 9 } />
+        </div> */}
         <TrackColor />
       </section>
     );
