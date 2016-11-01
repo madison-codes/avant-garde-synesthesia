@@ -14,4 +14,9 @@
 
 #canvas {
   border: 2px solid blue;
+  position: relative;
+}
+
+#video {
+  position: absolute;
 }
