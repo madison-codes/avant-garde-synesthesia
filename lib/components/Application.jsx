@@ -6,6 +6,7 @@ export default class Application extends React.Component {
   constructor() {
     super();
     this.state = {
+      note: null
     };
   }
 
@@ -34,7 +35,8 @@ export default class Application extends React.Component {
           <Sound index={ 8 } />
           <Sound index={ 9 } />
         </div> */}
-        <TrackColor />
+        <TrackColor onNoteChange={note => this.setState({ note })} />
+        <Sound note={this.state.note} />
       </section>
     );
   }
