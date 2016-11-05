@@ -1,0 +1,79 @@
+$color-one: #000;
+$color-two: #28272F;
+$color-three: #605F65;
+$color-three-hover: rgba(90, 95, 101, 0.5);
+$color-four: #D8D8D8;
+$color-five: #979797;
+
+$color-highlight: #ADEDE0;
+$color-text: #FFF;
+
+$font-main: 'Lato', sans-serif;
+
+@mixin logo-s($num, $animation) {
+  position: fixed;
+  left: $num + 5px;
+  animation-name: $animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+}
+
+@keyframes logo-b {
+    0%   {top: 30px; left: 35px;}
+    25%  {top: 20px; left: 25px;}
+    50%  {top: 10px; left: 20px;}
+    100% {top: 0px; left: 15px;}
+}
+
+@keyframes logo-c {
+    0%   {top: 60px; left: 80px;}
+    25%  {top: 40px; left: 60px;}
+    50%  {top: 20px; left: 40px;}
+    100% {top: 0px; left: 20px;}
+}
+
+@keyframes logo-d {
+    0%   {top: 90px; left: 115px;}
+    25%  {top: 60px; left: 85px;}
+    50%  {top: 30px; left: 55px;}
+    100% {top: 0px; left: 25px;}
+}
+
+@mixin direction {
+  height: 120px;
+  width: 120px;
+  margin: 3px;
+  display: inline-block;
+  background-color: $color-three;
+  &:hover {
+    background-color: $color-four;
+    .line {
+      display: none;
+    }
+    .note-location {
+      display: none;
+    }
+    .note-name {
+      display: inline;
+    }
+  }
+}
+
+@mixin line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $color-five;
+  margin: 40px 0;
+  padding: 0;
+  position: relative;
+}
+
+@mixin note {
+  height: 40px;
+  width: 40px;
+  background-color: $color-highlight;
+  position: absolute;
+  z-index: 4;
+}
