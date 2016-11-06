@@ -57,6 +57,7 @@
     "webpack-dev-server": "^1.15.2"
   },
   "dependencies": {
-    "moment": "^2.15.0"
+    "moment": "^2.15.0",
+    "react-audio-player": "^0.2.8"
   }
 }

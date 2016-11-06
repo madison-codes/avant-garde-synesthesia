@@ -1,7 +1,8 @@
 import React from 'react';
 import Sound from './Sound';
-import SoundControl from './SoundControl';
 import TrackColor from './TrackColor'
+import Video from './Video';
+import Audio from './Audio';
 
 export default class Application extends React.Component {
   constructor() {
@@ -21,10 +22,10 @@ export default class Application extends React.Component {
     return (
       <section className='all'>
         <article>
+          <Audio />
+          <Video />
           <TrackColor onNoteChange={note => this.setState({ note })} />
-          <Sound note={this.state.note} >
-             <SoundControl volOn={ this.state.playing } />
-          </Sound>
+          <Sound note={this.state.note} />
         </article>
         <article className='main'>
           <div className='logo'>
