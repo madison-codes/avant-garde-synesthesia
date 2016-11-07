@@ -1,0 +1,49 @@
+@import 'variables';
+
+body {
+  background-color: $color-two;
+  font-family: $font-main;
+}
+
+.all {
+  height: calc(100vh + 128px);
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  text-shadow: 0 0 1px rgba(0,0,0,0.6), 1px 1px 2px rgba(0,0,0,0.35);
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: $color-one;
+}
+
+.logo {
+  color: white;
+  font-family: $font-main;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  padding-left: 10px;
+}
+
+.s-logo {
+  position: fixed;
+  font-size: 6em;
+}
+
+.logo-b {
+  @include logo-s(10, logo-b);
+}
+
+.logo-c {
+  @include logo-s(15, logo-c);
+}
+
+.logo-d {
+  @include logo-s(20, logo-d);
+}

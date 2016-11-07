@@ -1,0 +1,38 @@
+@import 'variables';
+
+.directions {
+  background-color: $color-two;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 20vh;
+  width: 100%;
+  overflow-x: scroll;
+  word-spacing: -4px;
+  line-height: 0;
+  white-space: nowrap;
+}
+
+.direction {
+  @include direction;
+}
+
+.line {
+  @include line;
+}
+
+.note-location {
+  @include note;
+  top: 0;
+  left: 0;
+  margin: 3px;
+}
+
+.note-name {
+  display: none;
+  position: absolute;
+  font-size: 4rem;
+  margin-left: 5px;
+  margin-top: 60px;
+}

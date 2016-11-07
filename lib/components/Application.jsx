@@ -1,42 +1,82 @@
 import React from 'react';
 import Sound from './Sound';
 import TrackColor from './TrackColor'
+import Video from './Video';
+import Audio from './Audio';
+import NoteCard from './NoteCard';
+
+import notes from '../helpers/notes';
 
 export default class Application extends React.Component {
   constructor() {
     super();
     this.state = {
-      note: null
+      note: null,
+      playing: true,
+      recording: false
     };
   }
 
-  pauseSound() {
-    gain.gain.value = 0;
+  togglePlay() {
+    this.setState({ playing: !this.state.playing });
   }
 
   render() {
     return (
-      <section>
-        <p>
-          Click the buttons to play or pause the audio.
-        </p>
-        {/* <div>
-          <Sound index={ 6 } />
-          <Sound index={ 2 } />
-          <Sound index={ 3 } />
-        </div>
-        <div className='contain-sound'>
-          <Sound index={ 4 } />
-          <Sound index={ 5 } />
-          <Sound index={ 6 } />
-        </div>
-        <div className='contain-sound'>
-          <Sound index={ 7 } />
-          <Sound index={ 8 } />
-          <Sound index={ 9 } />
-        </div> */}
-        <TrackColor onNoteChange={note => this.setState({ note })} />
-        <Sound note={this.state.note} />
+      <section className='all'>
+        <article>
+          <Audio />
+          <Video />
+          <TrackColor onNoteChange={note => this.setState({ note })} />
+          <Sound note={this.state.note} />
+        </article>
+        <article className='main'>
+          <div className='logo'>
+            <span className='s-logo logo-a'>S</span>
+            <span className='s-logo logo-b'>S</span>
+            <span className='s-logo logo-c'>S</span>
+            <span className='s-logo logo-d'>S</span>
+          </div>
+        </article>
+        <article className='directions'>
+          <NoteCard
+          noteName = {notes()[0] } />
+          <NoteCard
+          noteName = { notes()[1] } />
+          <NoteCard
+          noteName = {notes()[2] } />
+          <NoteCard
+          noteName = {notes()[3] } />
+          <NoteCard
+          noteName = {notes()[4] } />
+          <NoteCard
+          noteName = {notes()[5] } />
+          <NoteCard
+          noteName = {notes()[6] } />
+          <NoteCard
+          noteName = {notes()[7] } />
+          <NoteCard
+          noteName = {notes()[8] } />
+          <NoteCard
+          noteName = {notes()[9] } />
+          <NoteCard
+          noteName = {notes()[10] } />
+          <NoteCard
+          noteName = {notes()[11] } />
+          <NoteCard
+          noteName = {notes()[12] } />
+          <NoteCard
+          noteName = {notes()[13] } />
+          <NoteCard
+          noteName = {notes()[14] } />
+          <NoteCard
+          noteName = {notes()[15] } />
+          <NoteCard
+          noteName = {notes()[16] } />
+
+
+
+        </article>
       </section>
     );
   }

@@ -1,22 +1,21 @@
 @import 'reset';
 @import 'variables';
-
-.contain-sound {
-  display: inline-block;
-}
-
-.sound-btn {
-  background-color: pink;
-  height: 100px;
-  width: 100px;
-  display: inline-block;
-}
+@import 'main';
+@import 'directions';
 
 #canvas {
-  border: 2px solid blue;
-  position: relative;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 100px;
+  border: 3px solid blue;
 }
 
 #video {
-  position: absolute;
+  z-index: 1;
+  position: fixed;
+  // position: absolut100px
+  // transform: rotateY(180deg);
+  // -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+  // -moz-transform:rotateY(180deg); /* Firefox */
 }
