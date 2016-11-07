@@ -78,3 +78,9 @@ $font-main: 'Lato', sans-serif;
   position: absolute;
   z-index: 4;
 }
+
+@mixin flip {
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+}

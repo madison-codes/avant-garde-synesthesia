@@ -2,34 +2,21 @@ import React from 'react';
 import Sound from './Sound';
 import TrackColor from './TrackColor'
 import Video from './Video';
-import Audio from './Audio';
-import NoteCard from './NoteCard';
-
-import notes from '../helpers/notes';
+import Directions from './Directions'
+// import Audio from './Audio';
 
 export default class Application extends React.Component {
   constructor() {
     super();
     this.state = {
-      note: null,
-      playing: true,
-      recording: false
+      note: null
     };
-  }
-
-  togglePlay() {
-    this.setState({ playing: !this.state.playing });
   }
 
   render() {
     return (
       <section className='all'>
-        <article>
-          <Audio />
-          <Video />
-          <TrackColor onNoteChange={note => this.setState({ note })} />
-          <Sound note={this.state.note} />
-        </article>
+          {/* <Audio /> */}
         <article className='main'>
           <div className='logo'>
             <span className='s-logo logo-a'>S</span>
@@ -37,46 +24,11 @@ export default class Application extends React.Component {
             <span className='s-logo logo-c'>S</span>
             <span className='s-logo logo-d'>S</span>
           </div>
+          <Video />
+          <TrackColor onNoteChange={note => this.setState({ note })} />
+          <Sound note={this.state.note} />
         </article>
-        <article className='directions'>
-          <NoteCard
-          noteName = {notes()[0] } />
-          <NoteCard
-          noteName = { notes()[1] } />
-          <NoteCard
-          noteName = {notes()[2] } />
-          <NoteCard
-          noteName = {notes()[3] } />
-          <NoteCard
-          noteName = {notes()[4] } />
-          <NoteCard
-          noteName = {notes()[5] } />
-          <NoteCard
-          noteName = {notes()[6] } />
-          <NoteCard
-          noteName = {notes()[7] } />
-          <NoteCard
-          noteName = {notes()[8] } />
-          <NoteCard
-          noteName = {notes()[9] } />
-          <NoteCard
-          noteName = {notes()[10] } />
-          <NoteCard
-          noteName = {notes()[11] } />
-          <NoteCard
-          noteName = {notes()[12] } />
-          <NoteCard
-          noteName = {notes()[13] } />
-          <NoteCard
-          noteName = {notes()[14] } />
-          <NoteCard
-          noteName = {notes()[15] } />
-          <NoteCard
-          noteName = {notes()[16] } />
-
-
-
-        </article>
+        <Directions />
       </section>
     );
   }
