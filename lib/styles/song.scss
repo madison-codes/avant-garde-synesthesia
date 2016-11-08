@@ -17,12 +17,13 @@
 }
 
 .direction {
-  position: absolute;
+  position: relative;
   height: 150px;
   width: 100px;
   left: 140px;
   font-size: 2em;
-  bottom: 0;
+  bottom: 128px;
+  display: inline-block;
 }
 
 .trebble {
@@ -36,35 +37,31 @@
   @include line;
 }
 
+
 .C {
   @include note(60px);
 }
 
 .D {
-  @include note(70px);
+  @include note(37px);
 }
 
 .E {
-  @include note(80px);
+  @include note(45px);
 }
 
 .F {
-  @include note(90px);
+  @include note(54px);
 }
 
 .G {
-  @include note(100px);
+  @include note(65px);
 }
 
 .A{
-  @include note(40px);
+  @include note(74px);
 }
 
 .B {
-  @include note(50px);
-}
-
-.note {
-  background-color: blue;
-  @include note(50px);
+  @include note(84px);
 }

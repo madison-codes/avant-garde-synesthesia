@@ -50,14 +50,6 @@ $font-main: 'Lato', sans-serif;
   position: relative;
 }
 
-@mixin note {
-  height: 40px;
-  width: 40px;
-  background-color: $color-highlight;
-  position: absolute;
-  z-index: 4;
-}
-
 @mixin flip {
   transform: rotateY(180deg);
   -webkit-transform:rotateY(180deg);
@@ -68,4 +60,6 @@ $font-main: 'Lato', sans-serif;
   position: absolute;
   bottom: $position;
   letter-spacing: 8px;
+  display: inline-block;
+  z-index: 5;
 }
