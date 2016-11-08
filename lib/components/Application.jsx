@@ -28,7 +28,7 @@ export default class Application extends React.Component {
           <TrackColor onNoteChange={note => this.setState({ note })} />
           <Sound note={this.state.note} />
         </article>
-        <Directions />
+        <Directions note={this.state.note}/>
       </section>
     );
   }

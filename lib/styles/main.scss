@@ -3,10 +3,12 @@
 body {
   background-color: $color-two;
   font-family: $font-main;
+  width: 100vw;
 }
 
 .all {
   height: calc(100vh + 128px);
+  width: 100vw;
   overflow-y: scroll;
 }
 
