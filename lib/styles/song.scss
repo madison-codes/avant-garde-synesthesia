@@ -1,0 +1,67 @@
+@import 'variables';
+
+.directions {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  right: 0;
+  height: 120px;
+  width: 100vw;
+  word-spacing: -4px;
+  line-height: 0;
+  white-space: nowrap;
+  z-index: -2;
+  color: $color-four;
+}
+
+.direction {
+  position: relative;
+  height: 150px;
+  width: 100px;
+  left: 140px;
+  font-size: 2em;
+  bottom: 128px;
+  display: inline-block;
+}
+
+.trebble {
+  position: absolute;
+  bottom: 85px;
+  font-size: 18em;
+  opacity: .1;
+}
+
+.line {
+  @include line;
+}
+
+
+.C {
+  @include note(60px);
+}
+
+.D {
+  @include note(37px);
+}
+
+.E {
+  @include note(45px);
+}
+
+.F {
+  @include note(54px);
+}
+
+.G {
+  @include note(65px);
+}
+
+.A{
+  @include note(74px);
+}
+
+.B {
+  @include note(84px);
+}

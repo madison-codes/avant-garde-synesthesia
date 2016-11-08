@@ -40,47 +40,26 @@ $font-main: 'Lato', sans-serif;
     100% {top: 0px; left: 25px;}
 }
 
-@mixin direction {
-  height: 120px;
-  width: 120px;
-  margin: 3px;
-  display: inline-block;
-  position: relative;
-  background-color: $color-three;
-  &:hover {
-    background-color: $color-four;
-    .line {
-      display: none;
-    }
-    .note-location {
-      display: none;
-    }
-    .note-name {
-      display: inline;
-    }
-  }
-}
-
 @mixin line {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid $color-five;
-  margin: 10px 0;
+  margin: 17px 0;
   padding: 0;
   position: relative;
-}
-
-@mixin note {
-  height: 40px;
-  width: 40px;
-  background-color: $color-highlight;
-  position: absolute;
-  z-index: 4;
 }
 
 @mixin flip {
   transform: rotateY(180deg);
   -webkit-transform:rotateY(180deg);
   -moz-transform:rotateY(180deg);
+}
+
+@mixin note($position) {
+  position: absolute;
+  bottom: $position;
+  letter-spacing: 8px;
+  display: inline-block;
+  z-index: 5;
 }
