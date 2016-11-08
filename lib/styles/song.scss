@@ -1,34 +1,38 @@
 @import 'variables';
 
 .directions {
-  margin: 0;
-  padding: 0;
   position: fixed;
   left: 0;
   bottom: 0px;
   right: 0;
-  height: 120px;
+  z-index: -1;
+
   width: 100vw;
+  height: 128px;
+
+  overflow-x: scroll;
+  white-space: nowrap;
   word-spacing: -4px;
   line-height: 0;
-  white-space: nowrap;
-  z-index: -2;
-  color: $color-four;
+  color: black;
 }
 
 .direction {
   position: relative;
-  height: 150px;
-  width: 100px;
-  left: 140px;
-  font-size: 2em;
-  bottom: 128px;
   display: inline-block;
+  left: 140px;
+  bottom: 128px;
+
+  width: 100px;
+  height: 150px;
+
+  font-size: 2em;
 }
 
 .trebble {
   position: absolute;
   bottom: 85px;
+
   font-size: 18em;
   opacity: .1;
 }
@@ -36,7 +40,6 @@
 .line {
   @include line;
 }
-
 
 .C {
   @include note(60px);

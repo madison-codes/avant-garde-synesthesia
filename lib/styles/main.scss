@@ -3,34 +3,34 @@
 body {
   background-color: $color-two;
   font-family: $font-main;
-  padding: 0;
 }
 
 .all {
-  height: calc(100vh + 128px);
   width: 100vw;
-  overflow-y: scroll;
-  padding: 0;
-
+  height: calc(100vh + 128px);
 }
 
 .main {
-  height: 100vh;
-  width: 100vw;
   position: absolute;
   top: 0;
-  color: #fff;
-  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+  width: 100vw;
+  height: 100vh;
+
   background-color: $color-one;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  color: #fff;
 }
 
 .logo {
+  position: absolute;
+  padding-left: 10px;
+
+  width: 100px;
+  height: 100px;
+
   color: white;
   font-family: $font-main;
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  padding-left: 10px;
 }
 
 .s-logo {
