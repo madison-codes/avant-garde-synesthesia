@@ -1,39 +1,65 @@
 @import 'variables';
 
 .directions {
-  background-color: $color-two;
+  margin: 0;
+  padding: 0;
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 0px;
   right: 0;
-  height: 128px;
-  width: 100%;
-  overflow-x: scroll;
+  height: 120px;
+  width: 100vw;
   word-spacing: -4px;
   line-height: 0;
   white-space: nowrap;
   z-index: -2;
 }
 
-.direction {
-  @include direction;
-}
-
 .line {
   @include line;
 }
 
-.note-location {
-  @include note;
-  top: 0;
-  left: 0;
-  margin: 3px;
+.direction {
+  position: absolute;
+  height: 128px;
+  width: 100px;
+  left: 100px;
+  color: $color-four;
+  font-size: 2em;
+  bottom: 0;
 }
 
-.note-name {
-  display: none;
+.C {
   position: absolute;
-  font-size: 4rem;
-  margin-left: 5px;
-  margin-top: 60px;
+  bottom: 10px;
+}
+
+.D {
+  position: absolute;
+  bottom: 20px;
+}
+
+.E {
+  position: absolute;
+  bottom: 33px;
+}
+
+.F {
+  position: absolute;
+  bottom: 43px;
+}
+
+.G {
+  position: absolute;
+  bottom: 50px;
+}
+
+.A{
+  position: absolute;
+  bottom: 60px;
+}
+
+.B {
+  position: absolute;
+  bottom: 70px;
 }
