@@ -25,7 +25,7 @@ module.exports = {
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json', '.scss', '.css', '.mp3'],
+    extensions: ['', '.js', '.jsx', '.json', '.scss', '.css'],
   },
   packages: [{
       name: "mp3-parser",
