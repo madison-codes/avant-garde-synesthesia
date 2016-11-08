@@ -13,53 +13,58 @@
   line-height: 0;
   white-space: nowrap;
   z-index: -2;
+  color: $color-four;
+}
+
+.direction {
+  position: absolute;
+  height: 150px;
+  width: 100px;
+  left: 140px;
+  font-size: 2em;
+  bottom: 0;
+}
+
+.trebble {
+  position: absolute;
+  bottom: 85px;
+  font-size: 18em;
+  opacity: .1;
 }
 
 .line {
   @include line;
 }
 
-.direction {
-  position: absolute;
-  height: 128px;
-  width: 100px;
-  left: 100px;
-  color: $color-four;
-  font-size: 2em;
-  bottom: 0;
-}
-
 .C {
-  position: absolute;
-  bottom: 10px;
+  @include note(60px);
 }
 
 .D {
-  position: absolute;
-  bottom: 20px;
+  @include note(70px);
 }
 
 .E {
-  position: absolute;
-  bottom: 33px;
+  @include note(80px);
 }
 
 .F {
-  position: absolute;
-  bottom: 43px;
+  @include note(90px);
 }
 
 .G {
-  position: absolute;
-  bottom: 50px;
+  @include note(100px);
 }
 
 .A{
-  position: absolute;
-  bottom: 60px;
+  @include note(40px);
 }
 
 .B {
-  position: absolute;
-  bottom: 70px;
+  @include note(50px);
+}
+
+.note {
+  background-color: blue;
+  @include note(50px);
 }

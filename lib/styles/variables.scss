@@ -64,6 +64,8 @@ $font-main: 'Lato', sans-serif;
   -moz-transform:rotateY(180deg);
 }
 
-@mixin note {
-
+@mixin note($position) {
+  position: absolute;
+  bottom: $position;
+  letter-spacing: 8px;
 }
