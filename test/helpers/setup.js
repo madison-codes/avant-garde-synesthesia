@@ -3,6 +3,7 @@ require('babel-register')({
 });
 
 require('babel-polyfill');
+require('jsdom');
 
 global.document = require('jsdom').jsdom(`
     <head>
@@ -14,8 +15,11 @@ global.document = require('jsdom').jsdom(`
 `);
 
 global.window = document.defaultView;
-global.navigator = window.navigator;
+global.navigator = {
+  userAgent: 'node.js'
+};
 
+global.window = document.defaultView;
 global.tracker = window.tracking || {};
 
 require('../../lib/vendor/tracking');
