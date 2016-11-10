@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixins';
+
+#canvas {
+  @include flip;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  z-index: 1;
+}
+
+#video {
+  @include flip;
+  visibility: hidden;
+}

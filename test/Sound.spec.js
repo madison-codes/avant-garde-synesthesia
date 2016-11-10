@@ -8,9 +8,7 @@ import SoundControls from '../lib/components/SoundControls';
 
 
 describe('Sound', () => {
-
   const wrapper = shallow(<Sound />);
-
   context('Sound set up', () => {
 
     it.skip('should render within a <section>', () => {

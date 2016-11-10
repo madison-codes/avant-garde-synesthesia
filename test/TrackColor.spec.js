@@ -6,9 +6,7 @@ import { assert, expect } from 'chai';
 import TrackColor from '../lib/components/TrackColor';
 
 describe('TrackColor', () => {
-
   const wrapper = shallow(<TrackColor />);
-
   context('render', () => {
     it('should render within a section', () => {
       assert.equal(wrapper.type(), 'section');

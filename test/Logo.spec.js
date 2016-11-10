@@ -7,9 +7,7 @@ import Logo from '../lib/components/Logo';
 
 
 describe('Logo', () => {
-
   const wrapper = shallow(<Logo />);
-
   context('Logo set up', () => {
 
     it('should render within a <section>', () => {

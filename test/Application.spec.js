@@ -54,6 +54,5 @@ describe('Application', () => {
       wrapper.state().song = ['A#3'];
       expect(wrapper.state().note.length).to.equal(1);
     });
-
   });
 });

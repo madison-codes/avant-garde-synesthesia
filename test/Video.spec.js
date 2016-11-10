@@ -5,7 +5,6 @@ import { assert, expect } from 'chai';
 
 import Video from '../lib/components/Video';
 
-
 describe('Video', () => {
   const wrapper = shallow(<Video />);
   context('render', () => {

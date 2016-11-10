@@ -10,7 +10,6 @@ import AllNotes from '../lib/components/AllNotes';
 
 describe('Song', () => {
   const wrapper = shallow(<Song />);
-
   context('Song set up', () => {
     it('should render within an <article>', () => {
       assert.equal(wrapper.type(), 'article');
