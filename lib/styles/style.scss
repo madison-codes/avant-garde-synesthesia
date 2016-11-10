@@ -1,19 +1,12 @@
 @import 'reset';
 @import 'variables';
+@import 'mixins';
 @import 'main';
+@import 'canvas';
 @import 'song';
+@import 'sound-controls';
 
-#canvas {
-  @include flip;
-  position: absolute;
-  top: 20px;
-  left: 100px;
-  z-index: 1;
-
-  border: 3px solid blue;
-}
-
-#video {
-  @include flip;
-  visibility: hidden;
+body {
+  font-family: $font-main;
+  background-color: $color-two;
 }
